@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>cascading style sheets</title>
+    <style>
+        body{background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000);
+        background-position:none;
+        background-repeat: no-repeat;
+        background-size:cover;} 
+        
+        h3{color:darkblue}
+        para{text-align:left;
+            color:cadetblue}
+        p.center{
+            text-align:left;
+            color: darkolivegreen;
+        }
+        *{
+            text-align: center;
+            color: black;
+            font:bold;
+        }
+        h2,h4,p.para1{
+            color:blueviolet;
+        }
+        .border{
+            border-style:groove;
+            border-color:cadetblue ;
+            border-width: 50ppx;
+            border-radius: 20px;
+            margin:50px;
+            padding:50px;
+        }
+        body{
+            text-align:center;
+            text-decoration:dashed;
+            text-transform:capitalize;
+            text-shadow:horizontal 20px blueviolet;
+            text-indent:35px;
+            letter-spacing:1px;
+            line-height:20px;
+            direction:rtl;
+            word-spacing:3px;
+
+        }
+        div{
+            margin:0px;
+            padding: 20px;
+            font-size:large;
+        }
+        /* comments  are writen in style tag in css */
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1><b>CASCADING STYLE SHEETS</b></h1>
+    its a language for web pages with colors,layouts,fonts<br>
+    css is a xml-based markuplanguage<br>
+    selector is where styling is applyed either internally or extrenally<br>
+    <h4 style="color:blueviolet;">INLINE CSS</h4><br>
+    it is genrally a vast process which needs a large concept of separation<br>
+    <h3>INTERNAL CSS</h3>
+    <p>it is applied internally on each document</p><br>
+    <h3>EXTERNAL CSS</h3>
+    we use link tag in head tag,reference is is added and file is saved with .css extension<br>
+    <h2>SELECTORS</h2>
+    <h3>ELEMENT SELECTORS</h3>
+    <p>applied on every paragraph</p><br>
+    <h3>ID SELECTORS</h3>
+    <p id="para">this will only be effected by css</p>
+    <h3 class="center">CLASS SELECTOR</h3>
+    <P class="center">select elements with a specific class attribute and used with period character(.) full stop followed by class name<br>class name shouldn't start with a number</P>
+    <p class="center">css class selector can only applied for specific element</p>
+    <h3>UNIVERSAL SELETOR</h3>
+    <p>applied on every paragragh</p>
+    <h3 class="para1">GROUP SELECTOR</h3>
+    <p class="para1">usedd to minimise the codes and commas used to separeate each selector</p>
+    <h3> CSS COLOR</h3>
+    <p>RGB-red green blue of range 0-255 color-rgb(R,G,B)</p><br>
+    <p>RGBA-red green blue alpha the value of alpha ranges 0.0-1.0 which are fully transperent and non transperent repectively color:rgba(R,G,B,A)</p><br>
+    <p>HEXADECIMALis a 6 digit color starts with #(000000) where first 2 digits represent red(RR),next 2 digits are green(GG),last 2 digits are blue(BB),black is all O's,white is  all F's,</p><br>
+    <p>SGORT HEX they are #7b6,#FFF,#OOO  etc</p>
+    <p>HSL-hue(degree color 0 to 360 and 0 is red,120 is green,240 is blue),saturation(values are in % where 100% is no saturation that means no gray,0% is  full saturation total gray(invisible)),lightness(% ,100% is light 0% no light) ; color:hsl(H,S,L)</p>
+    <p>HSLA-hue,saturation,light,alpha(0.0-1.0)</p>
+    <p>BUILT-IN is color:color-name</p>
+    <h3>BACKGROUND-COLOR</h3>
+    <P>background-color: color-name/color number</P>
+    <p>background-image:url(" ") by default img is covered entier page</p>
+    <p>background-repeat:repeat-x/no-repeat</p>
+    <p>background-attachment:fixed/scroll</p>
+    <p>background-position:center/top/bottom/left/right aplied on imgs only</p><br>
+    <h3>BOX MODEL</h3>
+    <P> box contains margins ,border ,padding ,content</P>
+    <h4>BORDER</h4>
+    <p class=border>border styled with dotted and groved and dashed line and inseted lines<br> </p>
+    <h4>TEXT FORMATTING</h4>
+    hi ... lets formate some text
+    we can add color of the text and align either left or right or center<br>
+    we can decorate,transfor the text either uppercase or lowercase or captilaise<br>
+    indentation is to indent (gap) for the first line of the paragragh<br>
+    letter spacing and word spacing and line height and direction for text direction<br>
+    text shadow either verically or horizontal with size and color<br>
+    <h4>FONT FORMATTING</h4>
+    font color<br>
+    font family to change face of the font <br> font family is divided into 2 types serif(times new roman,grorgin),san-serif(arial,vardana),monospace(same amount of horizontal space)<br>
+    font size(xx-small,x-small,small,medium,large,x-large,xx-larger,smaller,larger,%,pixels)<br>
+    font style(italic,obligue,normal)<br>
+    font variant to create small caps effect<br>
+    font weight to increase or decrease boldness and lightness of the font<br>
+    <h4>PSEUDO CLASS</h4>
+    <P>pesudo classes are non case-sensitive and used with css selectors</P><br>
+    they can be active,hover,link,visited,lang,focus,first-child <br>
+    <h4>DIVISION</h4>
+    <P>it is a block level tag which is a container tag with various tags of HTML so that separate sections are made for styling</P>
+    <div style="background-color: orange;">vandey     </div>
+    <div style="background-color:white">
+    <img src="data:image/png;base64,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" alt="ashokachakra"></div>
+    <div style="background-color:green;">mataaram     </div>
+    <h4>DISPLAY PROPERTIES</h4>
+    <P>display is used to control the layouts</P><br>
+    <p>inline,inline-block,block,none</p><br>
+    <p>INLINE:it takes reqiured width,it doesnt force the line break so the flow of the text doesnt break</p><br>
+    <p>INLINE-BLOCK:we can set the diffrent heights and widths</p><br>
+    <p>BLOCK:it takes the reqired space as they can horizontally</p><br>
+    <p>NONE:it totally removes the element from the page,no space is remained</p><br>
+</body>
+</html>
