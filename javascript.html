@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <h1>3.JAVA SCRIPT</h1>
+    <p>used in game development,mobile application development<br>
+    <b>object based scripting language</b> with leightweight,crossplotform<br>
+    not a compiled language, it is a traslated language <br>
+    translator is embeded in browser<br>
+    <b>Applications</b><br>
+    JavaScript is used to create interactive websites. <br>
+    Client-side validation,<br>
+    Dynamic drop-down menus,<br>
+    Displaying date and time,<br>
+    Displaying pop-up windows and dialog boxes (like an alert dialog box, confirm dialog box and prompt dialog box),<br>
+    Displaying clocks etc.<br>
+    <b>uses:</b><br>
+    can change html content,html attributes,css,hide and dispaly the content<br>
+    </P>
+    <h2>DOM</h2>
+    <p><b>document object model</b><br>
+    html-structure the pages<br>
+    js-add behaviour to pages<br>
+    as js cant usedrsatand the tags so dom is interpreted<br>
+    dom is a hrml document in a different formate with objects<br>
+    when a web page is loaded broswer creates doc of page which is a tree of objects<br>
+    methods to find html elements <br>
+    document.getElementbyId(id)<br>
+    document.getElementByTagName(name) is from tag name given in any angular braces<br>
+    document.getElemenetByClassName(name) is from class name<br>
+    <b>to change html element</b><br>
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button><br>
+    <b>changing attributes</b><br>
+    <button onclick="document.getElementById('myImage').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgieavQesoU-9lTPT0wOEzKYCisGadMxDDfCDVxEhy72xauG9ZdQGtzUbMbyOCtSlQX-w&usqp=CAU'">Turn on the light</button>
+    <img id="myImage" src="" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='https://images.unsplash.com/photo-1602098206909-a104231d688b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlnaHQlMjBvZmZ8ZW58MHx8MHx8fDA%3D&w=1000&q=80'">Turn off the light</button>
+    <br>
+    <b>changing css</b><br>
+    <p id="demo1">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button><br>
+    <b>hiding html element</b><br>
+    <p id="demo2">JavaScript can hide HTML elements.</p>
+    <button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button><br>
+    <b>unhide hidden elements</b><br>
+    <p>JavaScript can show hidden HTML elements.</p>
+    <p id="demo" style="display:none">Hello JavaScript!</p><button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button><br>
+    </p><br>
+    <b>Window Obj</b><br>
+    supported by all browsers<br>
+    it represents browser window<br>
+    all js objs,funcns,variables are the members of window<br>
+    gobal var are props of window<br>
+    global fun are methods of window obj<br>
+    >window.document.getElementById("header");<br>
+    <b>Script</b><br>
+    can be placed in body or head tag or in external files(.js files)<br>
+    2 types of comments:<br>
+    1.single line comment(// single comment //)<br>
+    2.multi line comment(/* multiple comments */)<br>
+    to add script files use <script src="#.js"></script> is files are attached in body of .html file <br>
+    in .js file we create <br>
+    function functionName(){<br>
+        document.getElemenetById("id").innerHTML="";}<br>
+    <b>JS Outputs</b><br>
+    js can dispay data in different ways:<br>
+    1.<strong>innerHTML</strong> to write into html element and it defines html content<br>
+    2.<strong>document.write()</strong> to wriete html output<br>
+        eg:<script>document.write(2+4)</script><br>
+    3.<strong>window.alert()</strong> for writing into alert box ,here window is optional<br>
+        eg:<script>window.alert("welcome to java script")</script><br>
+    4.<strong>console.log()</strong> to write into browser console<br>
+        eg:<h2>Activate Debugging</h2>
+        <p>F12 on your keyboard will activate debugging.</p>
+        <p>Then select "Console" in the debugger menu.</p>
+        <p>Then click Run again.</p>
+        <script>console.log(5 + 6);</script><br>
+    5.<strong>window.print()</strong> it prints the content of current window<br>
+        eg:<button onclick="window.print()">Print this page</button><br>
+    <b>Identifiers</b><br>
+    all js var must be Identified with unique names these unique names are calledas identifiers<br>
+    they can be of short names<br>
+    <strong>rules</strong><br>
+    1.can contain letters,digits,underscore,dollar signs<br>
+    2.can begin with letter or $ and _ <br>
+    3.case senstive<br>
+    4.reserved names cant be used as names like keywords<br>
+    <strong>declaration:</strong> using var,let,const<br>
+    var doesnt have block scope but let and const have<br>
+    <b>DataTypes</b><br>
+    strings,number,bigint,boolean,undefined,null,symbol,object(object,array,date)<br>
+    we can use const while declaring a new Array or Obj or Function or a RegExp<br>
+    Note:while adding a string and number js treats num as string<br>
+    js evaluates exp from left to right<br>
+    js BigInt is 65 bit floating point format ,it returns boolean<br>
+    js has dynamic data type where one var can hold different data types(eg: x=1;x=y; it renders latest value of x)<br>
+    const is not a constant value it is a constant refrence to the value which leads not to do reasigning of constantvalue,constant array and constant obj bu it can change ele,prps of const array and obj<br>
+    array- square braces [], separated using commas<br>
+    obj-in curly braces {} has name:value pairs separated with commas<br>
+    expression is a combination of values, var,operators to compute vlaues<br>
+    <b>Operators</b><br>
+    1.arithmetic <br>
+    2.comparison(relational)operators<br>
+    3.bitwise operators(AND, OR, NOT, XOR,leftshift,rightshift)<br>
+    4.logical operators<br>
+    5.assignment operators(=,=!,etc)<br>
+    6.special operators(. , ?: , delete, typeof,void,in,instance)<br>
+    <b>Loops:</b>
+    1 for:initialize value,check condition , increments<br>
+    2.While: while and do while loop<br>
+    3.switch: has expression and cases as there condition and also a default value<br>
+    <b>Arrays</b>
+    collection of items<br>
+    to access elements it refer to index number which starts with 0<br>
+    creation:var arrayname=new array("ele") this is using array constructer;<br>
+    they are special type of obj , it returns object when we find typeof obj of array<br>
+    we can also update a specific element using arrayname[index]=newvalue <br>
+    access last element using -1 index<br>
+    there are methods(array lenght,array toString,array pop,array push,array shift,array unshift,array join,array delete, array concat,array flat,array flat,array,array splice,arrayslice)<br>
+    Array toString():js calls toString method auotmatically when a array has a txt value or when refered to a string concatenation<br>
+    it converts array into string<br>
+    shift removes ele from left , and unshift adds ele to array <br>
+    concat merges 2 arrays >const arrayname=arr1.concat(arr2);<br>
+    flat method is used toreduce the dimensionality of array, it creates new array with sub array ele<br>
+    <h2>OBJECTS</h2><br>
+    it is an entity having state ,proparties,method eg car pen keyboard monitor etc<br>
+    in js everything is a obj , it si template based, here we can directly create objects without help of classes<br>
+    3 ways to create obj:<br>
+    1.by obj literal >obj={ prop:value,pro:val2}<br>
+    2.creating instance of obj directly by keywords >objname=new Object();<br>
+    3.using obj contructor, here we first need to create a funtion with args and each arg can be assigned using this keyword in current object<br>
+    <b>Date</b><br>
+    it is a obj used to get yr,mnth,day,time,hr,min,sec<br>
+    there are 4 constructers:Date(),Date(milliseconds),Date(dateString),Date(yr,mnth,day,hrs,min,sec,millisec)<br>
+    methods:Date(),getDate(),getDay(),getFullYear(),getYear(),getHours(),getMilliseconds(),getMinutes(),getMonth(),getTime()<br>
+    <h2>BOM</h2><br>
+    Browser Object Model -interacts with browser<br>
+    it is adefault obj of browser that means we can call allthe functions directly<br>
+    eg :alert("cancel "); is same as window.alert("cancel");<br>
+    properties of BOM:<br>
+    return doc model,return vieport area and outer width and inner height and outer height,loacation,returns boolean when closed,name of window,navigator <br>
+    methods:alert(),confirm(),prompt(),open(),close(),setTimeOut()<br>
+    <h2>Functions</h2><br>
+    it is a block of code tp do apaticular task that is enclosed in {}<br>
+    syntax:<br>
+    function funname(Para...){<br>
+        expressions ,conditions;}<br>
+    rendering outout using funname(paramenters)<br>
+    we can also assign fun to a var<br>
+    syntax:<br>
+    add=function sum(num1,num2){<br>
+        var result=num1+num2;<br>
+        reurn result;}<br>
+    <b>Types:</b><br>
+    1.NAMED function:<br>
+    syntax: function functionName(par1,2,.. ){<br>
+        body;<br>
+        return value;}<br>   
+    2.ANONYMOUS function:<br>
+    syntax:function (para1,2,...){<br>
+        body;
+        return result;}<br>
+    3.ARROW function:<br>
+    syntax: var varname=()=>{body;return result;}<br>
+    arrow function has forms <br>
+    1 only one statement<br>
+    2.only one parameter<br>
+    3. no arg<br>
+    <h2>REGULAR expression</h2><br>
+    seq of char that forms a search pattern <br>
+    it can be a single char or more complicated pattern<br>
+    2 types of creating regular expression in js<br>
+    1.Regular Expression literal:<br>
+    pattern is eclosed in between slashes /pattern/falg <br>
+    syntax:var regexLitral=/abc/i or g <br>
+    i is case insensitive search<br>
+    g is a global search ,it doesnt return after 1st match onlyreturns after all searches<br>
+    2.RegExp() constructer fun:<br>
+    syntax: var regex=new RegExp('pattern');<br>
+    methods for testing regexp<br>
+    1.Test():to check the match is found or not ,returns boolean<br>
+    syntax: var result=regex.test(varname);<br>
+            console.log(result);<br>
+    2.exec():returns the all matched grouos of the array<br>
+    syntax: var result=regex.exec(varname);<br>
+    char groups:<br>
+    [xyz]- matches char with the string <br>
+    [^xyz]-doesnt match char with the string<br>
+    [a-z]or[A-Z]-match all letters  <br>
+    [0-9]- matches digits<br>
+    [x|y]-matches any of the alternative<br>
+    META char:<br>
+    \d-match digits<br>
+    \D-doesnt match digits<br>
+    \w-matches words<br>
+    \W-doesnt match digits<br>
+    \s-white space<br>
+    \S-match non white space<br>
+    \t-match tab char<br>
+    \b-matches owrd ending or beginning<br>
+    \.-matches any chat except newline<br>
+    Quantifiers:<br>
+    + -matches all pressiding exp 1 to more<br>
+    * -matches all preceding expression 0 or more times<br>
+    ? - matches preceding exp 0 to 1 time, it is optional<br>
+    ^ -matches beginning of string<br>
+    $ - matches end of the string<br>
+    {N,} - matches atleast n occurences of presceding regular exp<br>
+    {N,M} -matches atleast N and atmost M occurences of preceding regu exp where M>N <br>
+    String methods:search() for searching by matching and returns the position of match<br>
+    replace() returns a modified string where the patter is replaced<br>
+    <h2>OOPS in js</h2><br>
+    classes<br>
+    inheritence-props,methods  are being used by other obj(extends)<br>
+    <h2>removing duplicates</h2><br>
+    1.filter()-creates a new array of elementsthat pass conditions for only signle value by removing the duplicates<br>
+    2.indexof()-returns index of first occurence of ele in array <br>
+    3.set()- it removes duplicate values by using set implicitly <br>
+    4.forEach()-it iterate over elements in array, push only ele that are not in array<br>
+    5.include()-if already has ele it returns true if not returns false and inserts into array<br>
+    <h2>AJAX</h2><br>
+    asynchronous ja and xml<br>
+    helpsin fetching data asynchronously without page refreshing<br>
+    web server sends the data that we requested in httprequest form <br>
+    it can be of form JSON,XML...<br>
+    asynchronus js:it allows prog to execute immediallty unlike synchronus whuch waits for te finishing of the current code<br>
+    Steps for data acquiring:<br>
+    1.create xmlhttprequest obj:(let xhr=newxmlhttprequest())<br>
+    2.open() method:open(method,url,async)<br>
+    3.send request: send()<br>
+    properties:A.readystate<br>
+    0:req not initialized<br>
+    1:server connection established<br>
+    2.request recived<br>
+    3.processing request<br>
+    4.request finished and response is ready<br>
+    B.onreadystatechange:it returns status number of request<br>
+    200:OK<br>
+    403:Forbidden<br>
+    404:Not Found<br>
+    C.xmlhttprequestobjectsmethod: sends req to web server,uses open() and send() to xmlhttpreuest obj<br>
+    xhttp.open("GET","content.txt",true);xhttp.send();<br>
+</body>
+</html>
