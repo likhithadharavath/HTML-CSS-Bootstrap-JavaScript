@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>basic html programs</title>
+</head>
+<body>
+    <!--this is comment session which is not visible in browser.-->
+    <p><h1>BASIC TAGS</h1>
+        <h2>BASIC TAG</h2>
+        <h3>BASIC TAG</h3>
+        <h4>BASIC TAG</h4>
+        <h5>BASIC TAG</h5>
+        <h6>BASIC TAG</h6>
+        paragraph tag is paried and blocked tag 
+    <br>break is an non paired tag</br>
+    <br><b>b-Bold Tag</b></br>
+    <br><u>u-under line</u></br>
+    <br><em>em-it is an emphasied text</em></br>
+    <br><i>i-italian text</i></br>
+    <br><small>small-it is small than usual text</small></br>
+    <br><strong>strong-stronger text than usual text</strong></br>
+    <br>---<sub>sub-subscript</sub>---</br>
+    <br>---<sup>super-superscript</sup>---</br>
+    <br><ins>ins-inserted text</ins></br>
+    <br><del>del-deleted text</del></br>
+    <br><mark>mark-marked text</mark></br>
+    <br><h3>anchor tag</h3></br>
+    <br>click on<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRezkhZEGyU-SbkR5X1RGxo8OxQFLfKonocyg&usqp=CAU" target="_blank" > click here </a> </br>
+    <br>a-anchor tag links pages which is called as hyper link and it is of 4 types relative,absolute,img,email</br>
+    <br><h3>img-image tag</h3><br>
+    <br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRezkhZEGyU-SbkR5X1RGxo8OxQFLfKonocyg&usqp=CAU" alt="error" width="200px" height="200px"></br></p>
+    <h3>unordered list</h3>
+    <br><ul>
+            <li><b>milk</b></li></ul>
+        <ul style="list-style:circle;">
+            <li>tea</li></ul>
+        <ul style="list-style-type:square;">
+            <li>cofee</li></ul>
+        <ul style="list-style-type: disc;">
+            <li>late</li></ul>            
+        <ul style="list-style-position:inside;">
+            <li>boast</li></ul>
+        <ul style="list-style-position: outside;">
+            <li>horlicks</li></ul>
+            unordered list is list items marked with bullets
+            <br>default is disc </br>
+     <h3>ordered list</h3>       
+    <br><ol>
+            <li>juice</li></ol>
+        <ol type="1">
+            <li>apple</li></ol>
+        <ol type="A">
+            <li>banana</li></ol>     
+        <ol type="a">
+            <li>chocolate</li></ol>
+        <ol type="I">
+            <li>grape</li></ol>
+        <ol type="i" start="5">
+            <li>lemon</li></ol>
+        <ol style="list-style-type: lower-roman;">
+            <li>mango</li></ol>
+        <ol style="list-style-type: lower-alpha;">
+            <li>orange</li></ol>
+        <ol style="list-style-type: lower-greek;">
+            <li>pine apple</li></ol>
+        <ol style="list-style-type: lower-latin;">
+            <li>water melon</li></ol>
+        <br>ordered list list items are  marked with numbers </br>
+        <br> default is numbers</br>
+        <br>start attribute starts numbering from paticular number</br></br>
+    <h3>data list</h3>
+    <br><dl>
+        <dt>dl</dt>
+        <dd>-data list</dd>
+        <dt>dt</dt>
+        <dd>-data term</dd>
+        <dt>dd</dt>
+        <dd>-data defination</dd></dl>
+        these are html description list or defination list</br>
+    <dl>
+        <dt>pen</dt>
+        <dd>usedd to write </dd>
+        <dt>pencil</dt>
+        <dd>of lead</dd>
+        <dt>book</dt>
+        <dd>to study</dd>
+    </dl>
+    <h3>nested list</h3>
+    <br><ol>
+        <li>india</li>
+        <ul><li>delhi</li>
+            <li>telangana</li>
+            <li>ap</li></ul></ol></br>
+    <h3>tables</h3>
+    <br> tables are used to display row*column,<br>
+    tr is table row ,<br>
+    td is table data,<br>
+    th is table header,<br>
+    by default cell padding is 0 and cell spacing is 2 pixel,<br>
+    thread is used to define header,<br>
+    tbody tag is for table body,<br>
+    tfoot is for table footer,<br>
+    usefull for multiple pages.</br>
+    <br>row span is merge vertical boxes i.e columns ,and colspan is to merge horizontal i.e rows </br>
+    <table border="2" cellspacing="2" cellpadding="7">
+        <tr>
+            <th colspan="2">rollno</th>
+            <th colspan="2">name</th>
+            <th>branch</th>
+            <th>contact</th>
+        </tr>
+        <tr>
+            <th rowspan="2">1</th>
+            <td>1</td>
+            <td>kumar</td>
+            <td>varma</td>
+            <td>csd</td>
+            <td>6309876543</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>rama</td>
+            <td>rao</td>
+            <td>csd</td>
+            <td>9876543210</td>
+        </tr></table>
+    <h3>forms</h3>
+    <br>they collect user input which is sent to server processing, forms have checkboxes radio boxes buttons text feilds etc</br>
+    <br>we have action attribute for action page and target to specifie where to display and method to submistv or post data</br>
+    <br>input attribute is used for type of form to create like text or radio or chechbox or submit or buttons</br>
+    <br>label is useful for screen reader user</br>
+    <br>name attribute is used to select only one option</br>
+    <br><form>
+        <label for="rollno">Rollno:</label><br>
+        <input type="text" id="rollno" name="rollno"><br>
+        <label for="fullname">Fullname:</label><br>
+        <input type="text" id="fullname" name="fullname"><br>
+        <label for="contact">Contact:</label><br>
+        <input type="tel" name="phone" size="12" pattern="[0-9]{5}-[0_9]{5}" placeholder="01234-56789" /><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" />
+        <p> select a language in radio buttons</p>
+        <input type="radio" >
+        <label for="python">PYTHON</label><br>
+        <input type="radio" id="r" value="R">
+        <label for="r">R</label><br>
+        <input type="radio" id="html" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="c" value="C">
+        <label for="c">C</label><br>
+        <input type="radio" id="java" value="JAVA">
+        <label for="java">JAVA</label><br>
+        <p>selection</p>
+        <select>
+            <option>python</option>
+            <option>c</option>
+            <option>java</option>
+            <option>R</option>
+            <option>html</option>
+            <option>sql</option>
+        </select><br>
+        <p>select a check box</p>
+        <input type="checkbox" id="coding" value="coding">
+        <label for="coding">coding career</label><br>
+        <input type="checkbox" id="non coding" value="non coding">
+        <label for="non coding">non coding career</label><br>
+        <p>comment area</p>
+        <label for="text area">Comment:</label><br>
+        <textarea rows="2" cols="20"></textarea>
+        <p>buttons</p>
+        <input type="button" value="submit">
+    </form> 
+    <h3>marquee</h3>
+    <br>its a container tag used for  creating scrollable text or img <br><br>
+    <marquee width="80%" direction="none" height="100%" vspace="30" hspace="20" scrollamount="10">HEY BEAUTIFUL! DO U KNOW WE CANT BREATH WHEN WE SMILE...UH TRYED...DINDNT UH?</marquee>
+</body>
+</html>
